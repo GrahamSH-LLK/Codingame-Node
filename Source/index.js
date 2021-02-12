@@ -94,6 +94,9 @@ export default class Client {
         {
           method: "POST",
           body: JSON.stringify([handle]),
+          headers: {
+            cookie: this.cookies
+          },
         }
       );
       return {result: await Results.json(), valid: true}
