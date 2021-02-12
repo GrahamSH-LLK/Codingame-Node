@@ -93,7 +93,7 @@ export default class Client {
         "https://www.codingame.com/services/ClashOfCode/startClashByHandle",
         {
           method: "POST",
-          body: JSON.stringify([handle]),
+          body: JSON.stringify([this.userId, handle]),
           headers: {
             cookie: this.cookies
           },
