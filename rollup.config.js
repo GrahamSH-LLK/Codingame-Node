@@ -2,14 +2,14 @@ import {terser} from 'rollup-plugin-terser'
 import {builtinModules} from 'module';
 import {dependencies} from './package.json';
 export default {
-  input: 'Source/index.js',
+  input: 'src/index.js',
   output: [{
-    file: 'Build/index.cjs',
+    file: 'dist/index.cjs',
     format: 'cjs',
     plugins: []
   },
   {
-    file: 'Build/index.js',
+    file: 'dist/index.js',
     format: 'es',
     plugins: []
   }],
