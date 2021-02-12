@@ -1,12 +1,12 @@
 {
-  "name": "codingame-node",
-  "version": "0.0.1",
+  "name": "codingame-api-node",
+  "version": "0.0.2",
   "description": "A <5kb single dependency Node.js wrapper for the Codingame api",
   "main": "Build/index.cjs",
   "module": "Build/index.js",
-  "homepage": "https://github.com/guildscript-bot/Codingame-Node",
+  "homepage": "https://github.com/GrahamSH-LLK/Codingame-Node",
   "bugs": {
-    "url": "https://github.com/guildscript-bot/Codingame-Node/issues"
+    "url": "https://github.com/GrahamSH-LLK/Codingame-Node/issues"
   },
   "scripts": {
     "test": "node Source/index.js",
@@ -17,7 +17,7 @@
     "Node.js",
     "API Wrapper"
   ],
-  "author": "AsyncBanana",
+  "author": "AsyncBanana, GrahamSH",
   "license": "MIT",
   "dependencies": {
     "node-fetch": "^2.6.1"
