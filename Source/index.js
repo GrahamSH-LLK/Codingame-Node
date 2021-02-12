@@ -87,6 +87,25 @@ export default class Client {
       return {valid: false, error: err}
     }
   }
+  async StartClash(handle) {
+    try {
+      const Results = await fetch(
+        "https://www.codingame.com/services/ClashOfCode/startClashByHandle",
+        {
+          method: "POST",
+          body: JSON.stringify([handle]),
+          headers: {
+            cookie: this.cookies
+          },
+        }
+      );
+      return {result: await Results.json(), valid: true}
+    } catch (err) {
+      return {valid: false, error: err}
+    }
+  }
+
+
   async GetClash(handle) {
     try {
       const Results = await fetch(
